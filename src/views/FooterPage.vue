@@ -8,7 +8,7 @@ export default {
   <div class="wrapper">
     <div class="container-fluid">
       <div class="col-3">
-        <img alt="" src="@/assets/Image/img.png">
+        <img alt="" src="/assets/Image/img.png">
       </div>
       <div class="col-3">
         <div class="title">Компания</div>

@@ -8,7 +8,7 @@ export default {
   <nav class="navbar navbar-expand-lg bg-body-black">
     <div class="container-fluid">
       <div class="logo">
-        <img src="@/assets/Image/img.png" alt="">
+        <img src="/assets/Image/img.png" alt="">
       </div>
       <a class="navbar-brand" href="#">Главная</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
