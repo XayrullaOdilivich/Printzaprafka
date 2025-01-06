@@ -5,7 +5,7 @@
 
     <!-- Asosiy kontent -->
     <main class="main-content">
-        <AboutPage />
+        <BrandPage />
     </main>
 
     <!-- Footer -->
@@ -20,10 +20,12 @@ import RegistrationPage from "@/views/RegistrationPage.vue";
 import SalesBrandPage from "@/views/SalesBrandPage.vue";
 import ServicesPage from "@/views/ServicesPage.vue";
 import AboutPage from "@/views/AboutPage.vue";
+import BrandPage from "@/views/BrandPage.vue";
 
 export default {
   name: "App",
   components: {
+      BrandPage,
       AboutPage,
       ServicesPage,
     SalesBrandPage,
