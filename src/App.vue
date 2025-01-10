@@ -5,7 +5,7 @@
 
     <!-- Asosiy kontent -->
     <main class="main-content">
-        <CommitPage />
+        <ServicesComponent />
     </main>
 
     <!-- Footer -->
@@ -16,22 +16,22 @@
 <script>
 import NavbarPage from "@/views/NavbarPage.vue";
 import FooterPage from "@/views/FooterPage.vue";
-import RegistrationPage from "@/views/RegistrationPage.vue";
 import SalesBrandPage from "@/views/SalesBrandPage.vue";
 import ServicesPage from "@/views/ServicesPage.vue";
 import AboutPage from "@/views/AboutPage.vue";
 import BrandPage from "@/views/BrandPage.vue";
 import CommitPage from "@/views/CommitPage.vue";
+import ServicesComponent from "@/components/ServicesComponent.vue";
 
 export default {
   name: "App",
   components: {
+      ServicesComponent,
       CommitPage,
       BrandPage,
       AboutPage,
       ServicesPage,
     SalesBrandPage,
-    RegistrationPage,
     NavbarPage,
     FooterPage,
   },

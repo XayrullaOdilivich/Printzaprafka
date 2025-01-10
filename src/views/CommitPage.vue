@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container" data-aos="fade-right" >
         <div class="title">Отзыв клиентов</div>
         <Splide ref="splide" :options="{
             type: 'loop',
@@ -144,6 +144,10 @@ export default {
 </template>
 
 <style scoped>
+[data-aos="fade-right"] {
+    transition-duration: 3s !important;
+}
+
 .title {
     color: white;
     text-align: center;
