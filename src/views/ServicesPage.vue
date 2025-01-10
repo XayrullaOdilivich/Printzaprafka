@@ -123,26 +123,23 @@ export default {
 
 <style scoped>
 [data-aos="fade-up"] {
-    transition-duration: 3s !important; /* "fade-up" animatsiyasi uchun davomiylik */
+    transition-duration: 3s !important;
 }
-/* Umumiy konteyner uslubi */
 .container {
-    width: 90%; /* Konteyner kengligi */
-    max-width: 1200px; /* Maksimal kenglik */
-    margin: 0 auto; /* Markazlash */
-    padding: 0 15px; /* Ichki bo'shliq */
-    box-sizing: border-box; /* Paddingni hisoblash */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
-/* Sarlavha uslubi */
 .title {
     color: white;
     font-weight: bold;
-    text-align: center; /* Matnni markazlash */
-    margin-bottom: 20px; /* Sarlavha ostidagi bo'sh joy */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Bo'linish chizig'i */
 hr {
     border: none;
     border-top: 2px solid gray;
@@ -151,42 +148,40 @@ hr {
 }
 
 .row {
-    display: flex; /* Yonma-yon joylashuv */
-    justify-content: space-between; /* Ramkalar orasidagi teng masofa */
-    flex-wrap: wrap; /* Qatorni o'ramli qilish */
-    gap: 10px; /* Elementlar orasidagi bo'shliq */
-    margin: 0 auto; /* Markazlash */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
 }
 
-/* Ramkalar kengligi va balandligi */
 .printer, .notebook, .shreder, .termo_print, .plotterov, .kompyuter {
-    height: 250px; /* Ramkaning bir xil balandligi */
-    border: 2px solid white; /* Ramka */
-    border-radius: 10px; /* Yumaloqlik */
-    overflow: hidden; /* Ortiqcha qismni yashirish */
-    position: relative; /* Elementni joylashni aniqlash */
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
     background-color: transparent;
-    margin-top: 20px; /* Tepadan bo'sh joy */
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-/* Kichik ekranlar uchun media-so'rov */
 @media (max-width: 768px) {
     .row {
-        flex-wrap: wrap; /* Kichik ekranlarda ustun tartibi */
-        justify-content: center; /* Elementlarni markazlash */
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .printer, .notebook, .shreder, .termo_print, .plotterov, .kompyuter {
-        flex: 0 0 100%; /* Kichik ekranlarda to'liq kenglik */
-        max-width: 100%; /* Maksimal kenglikni moslash */
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
 
 .content {
-    position: absolute; /* Matn joylashuvini sozlash */
-    bottom: 60px; /* Matn tugmadan yuqoriroq joylashadi */
+    position: absolute;
+    bottom: 60px;
     left: 15px;
     color: white;
 }
@@ -194,29 +189,29 @@ hr {
 p {
     margin: 0;
     color: white;
-    font-size: 14px; /* Matnning o‘lchamini kichikroq qilish */
+    font-size: 14px;
     line-height: 1.4;
 }
 
 h3 {
     margin: 0;
     color: white;
-    font-size: 18px; /* H3 elementining kattaligini oshirish */
-    font-weight: bold; /* Qalinroq matn uchun */
+    font-size: 18px;
+    font-weight: bold;
 }
 
 h4 {
     margin: 0;
     color: white;
-    font-size: 16px; /* H4 elementining kattaligini oshirish */
-    font-weight: bold; /* Qalinroq matn uchun */
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
 .btn {
     position: absolute;
     right: 15px;
-    bottom: 20px; /* Tugmani pastroqqa qaytarish */
+    bottom: 20px;
     background-color: #282c34;
     color: white;
     font-weight: bold;
@@ -257,11 +252,10 @@ h3, h4 {
 }
 
 .hover-image:hover {
-    transform: scale(1.1); /* Kattalashish */
+    transform: scale(1.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soha */
 }
 
-/* Qo'shimcha matn bloki uslubi */
 .list {
     position: absolute;
     top: 0;
@@ -296,7 +290,6 @@ h3, h4 {
     color: #f00;
 }
 
-/* Ramkalar uchun o'lchamlar */
 .printer {
     width: 512px;
     height: 250px;
