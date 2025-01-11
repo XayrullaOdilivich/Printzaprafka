@@ -5,7 +5,7 @@
 
     <!-- Asosiy kontent -->
     <main class="main-content">
-        <Home_1Component />
+        <HomeComponent />
     </main>
 
     <!-- Footer -->

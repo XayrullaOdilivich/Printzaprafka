@@ -24,14 +24,20 @@ export default {
     <div class="container-fluid">
         <div class="row borders-row">
             <div class="col-6 text-border">
-                <div class="title">Надежность и качество</div>
-                <div class="text">Ремонт и заправка картриджей. Оперативный выезд мастера на дом и в офис!</div>
-                <p>
-                    Предлагаем качественный ремонт принтеров, компьютеров, моноблоков и другой офисной техники, а также
-                    заправку картриджей с гарантией.
-                </p>
-                <a class="btn" href="#">Заказать ремонт</a>
-                <a class="btn btn_1" href="#">Узнать подробнее</a>
+                <div data-aos="fade-right" class="title">Надежность и качество</div>
+                <div data-aos="fade-right" class="text">Ремонт и заправка картриджей. Оперативный выезд мастера на дом и в офис!</div>
+                <div data-aos="fade-up-left">
+                    <p>
+                        Предлагаем качественный ремонт принтеров, компьютеров, моноблоков и другой офисной техники, а также
+                        заправку картриджей с гарантией.
+                    </p>
+                </div>
+                <div data-aos="fade-right" class="aos-btn">
+                    <a class="btn" href="#">Заказать ремонт</a>
+                </div>
+                <div data-aos="fade-left" class="aos-btn">
+                    <a class="btn btn_1" href="#">Узнать подробнее</a>
+                </div>
             </div>
             <div class="col-6 img-border">
                 <img src="/assets/Image/introimages-BtPiIBjT..svg" alt="">
@@ -42,6 +48,18 @@ export default {
 </template>
 
 <style scoped>
+[data-aos="fade-right"] {
+    transition-duration: 3s !important;
+}
+[data-aos="fade-left"] {
+    transition-duration: 3s !important;
+}
+[data-aos="fade-up-left"] {
+    transition-duration: 3s !important;
+}
+.aos-btn{
+    display: inline;
+}
 .container-fluid {
     display: flex;
     justify-content: center;
