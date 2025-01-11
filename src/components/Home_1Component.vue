@@ -6,35 +6,35 @@ export default {
 
 <template>
     <div class="container-fluid">
-        <a href="/some-link" class="img-link">
+        <a href="/registration" class="img-link">
             <div class="img-container">
                 <img src="/assets/Image/photo-1-wbPSPgqC.jpg.svg" alt="img">
                 <h3>Заправка монохромные лазерные картриджей</h3>
                 <span>Связаться с нами</span>
             </div>
         </a>
-        <a href="/another-link" class="img-link">
+        <a href="/registration" class="img-link">
             <div class="img-container">
                 <img src="/assets/Image/photo-2-CC4ylwUk.jpg.svg" alt="img">
                 <h3>Заправка струйные цветные картриджей</h3>
                 <span>Связаться с нами</span>
             </div>
         </a>
-        <a href="/another-link" class="img-link">
+        <a href="/registration" class="img-link">
             <div class="img-container">
                 <img src="/assets/Image/photo-3-CSNh64D_.jpg.svg" alt="img">
                 <h3>Заправка монохромные лазерные картриджей</h3>
                 <span>Связаться с нами</span>
             </div>
         </a>
-        <a href="/another-link" class="img-link">
+        <a href="/registration" class="img-link">
             <div class="img-container">
                 <img src="/assets/Image/photo-4-Cnzzg7kV.png.svg" alt="img">
                 <h3>Заправка цветные лазерные картриджей</h3>
                 <span>Связаться с нами</span>
             </div>
         </a>
-        <a href="/another-link" class="img-link">
+        <a href="/registration" class="img-link">
             <div class="img-container">
                 <img src="/assets/Image/photo-5-DCmbfDOy.jpg.svg" alt="img">
                 <h3>Продажа картриджей</h3>

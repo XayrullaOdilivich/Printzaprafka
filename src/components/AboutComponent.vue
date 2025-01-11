@@ -44,7 +44,7 @@ export default {
                     </p>
                 </div>
                 <div data-aos="fade-left" class="link">
-                    <a href="/#">Узнать больше</a>
+                    <a href="/about">Узнать больше</a>
                 </div>
             </div>
         </div>
