@@ -5,7 +5,7 @@
 
     <!-- Asosiy kontent -->
     <main class="main-content">
-        <ServicesComponent />
+        <HomeComponent />
     </main>
 
     <!-- Footer -->
@@ -22,10 +22,12 @@ import AboutPage from "@/views/AboutPage.vue";
 import BrandPage from "@/views/BrandPage.vue";
 import CommitPage from "@/views/CommitPage.vue";
 import ServicesComponent from "@/components/ServicesComponent.vue";
+import HomeComponent from "@/components/HomeComponent.vue";
 
 export default {
   name: "App",
   components: {
+      HomeComponent,
       ServicesComponent,
       CommitPage,
       BrandPage,
