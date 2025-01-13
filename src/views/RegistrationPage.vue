@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="form">
       <h1>Связаться с нами</h1>
       <div class="col-6">
@@ -15,12 +15,12 @@
 </template>
 
 <style scoped>
-.container {
+.container-fluid {
+  background-color: #2c3e50;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: none;
 }
 
 .form {

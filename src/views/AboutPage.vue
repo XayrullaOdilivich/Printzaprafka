@@ -69,6 +69,7 @@ hr {
 
 .container-fluid {
     padding: 0 20px;
+    background-color: #2c3e50;
 }
 
 .content {

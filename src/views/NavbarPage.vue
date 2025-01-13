@@ -1,6 +1,6 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-black">
-        <div class="container-fluid">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-black">
             <!-- Logo chap tomonda qoladi -->
             <div class="logo">
                 <img src="/assets/Image/img.png" alt="Logo" />
@@ -39,8 +39,8 @@
                 <!-- Tugma -->
                 <a class="btn" href="/registration">Вызвать мастера</a>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </template>
 
 <style scoped>
@@ -55,6 +55,8 @@
 /* Logo chap tomonda qoladi */
 .logo img {
     width: 120px;
+    position: relative;
+    left: 250%;
 }
 
 /* Navbar menyu tarkibi */
@@ -62,6 +64,11 @@
     display: flex;
     justify-content: flex-end; /* Linklarni o'ng tomonga surish */
     align-items: center;
+}
+
+.navbar-collapse {
+    position: relative;
+    left: 100%;
 }
 
 .nav-item {
@@ -130,3 +137,5 @@
     }
 }
 </style>
+<script setup lang="ts">
+</script>

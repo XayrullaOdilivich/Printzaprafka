@@ -24,6 +24,7 @@ export default {
 
 <style scoped>
 .container-fluid {
+    background-color: #2c3e50;
     position: relative; /* Konteyner elementlarning pozitsiyasini boshqaradi */
     width: 100%;
     height: 900px;
@@ -38,6 +39,7 @@ h1{
     font-size: 75px;
     font-weight: bold;
     z-index: 3; /* Matnni yuqoriga olib chiqish */
+    text-align: center;
 }
 
 p{

@@ -33,10 +33,10 @@ export default {
                     </p>
                 </div>
                 <div data-aos="fade-right" class="aos-btn">
-                    <a class="btn" href="#">Заказать ремонт</a>
+                    <a class="btn" href="/registration">Заказать ремонт</a>
                 </div>
                 <div data-aos="fade-left" class="aos-btn">
-                    <a class="btn btn_1" href="#">Узнать подробнее</a>
+                    <a class="btn btn_1" href="/about">Узнать подробнее</a>
                 </div>
             </div>
             <div class="col-6 img-border">
@@ -61,11 +61,13 @@ export default {
     display: inline;
 }
 .container-fluid {
+    background-color: #2c3e50;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 240px); /* Pastdan va tepadan 120px joy */
     padding: 120px 0; /* Umumiy yuqori va pastki bo'sh joy */
+    margin: 0;
 }
 
 .borders-row {

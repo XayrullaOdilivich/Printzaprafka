@@ -4,9 +4,9 @@
     <NavbarPage />
 
     <!-- Asosiy kontent -->
-    <main class="main-content">
+
         <router-view />
-    </main>
+
 
     <!-- Footer -->
     <FooterPage />
@@ -47,17 +47,10 @@ export default {
 <style scoped>
 /* Ilova qoplamasi */
 .app {
-  background-color: #2c3e50;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden; /* Gorizontal scrollni yo'q qilish */
-}
-
-/* Asosiy kontent */
-.main-content {
-  flex: 1; /* O'rtadagi qism joyni to'ldiradi */
-  padding: 20px;
 }
 
 /* Footerni yashirish */

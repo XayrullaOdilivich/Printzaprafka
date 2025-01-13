@@ -17,9 +17,10 @@ export default {
 </script>
 
 <template>
-    <div class="container" data-aos="fade-right" >
-        <div class="title">Отзыв клиентов</div>
-        <Splide ref="splide" :options="{
+    <div class="container-fluid">
+        <div class="container" data-aos="fade-right" >
+            <div class="title">Отзыв клиентов</div>
+            <Splide ref="splide" :options="{
             type: 'loop',
             autoplay: true,
             perPage: 3,
@@ -27,125 +28,130 @@ export default {
             gap: '1rem',
             arrows: false
         }">
-            <SplideSlide>
-                <div class="content">
-                    <div class="content-header">
-                        <img alt="img" src="/assets/avatar/img.png">
-                        <div class="name">Достон Ерназаров</div>
+                <SplideSlide>
+                    <div class="content">
+                        <div class="content-header">
+                            <img alt="img" src="/assets/avatar/img.png">
+                            <div class="name">Достон Ерназаров</div>
+                        </div>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>
+                            После того как мой принтер начал давать сбои, я обратился в эту компанию. Принтер починили
+                            быстро и
+                            качественно, теперь он работает как новый. Очень доволен обслуживанием, буду рекомендовать всем!
+                        </p>
                     </div>
-                    <div class="line">
-                        <hr>
+                </SplideSlide>
+                <SplideSlide>
+                    <div class="content">
+                        <div class="content-header">
+                            <img alt="img" src="/assets/avatar/img_1.png">
+                            <div class="name">Дилноза Назарова</div>
+                        </div>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>
+                            Заправка картриджа в этой компании — это всегда быстро и без проблем. Мой принтер работает
+                            отлично, а заправка картриджа в разы дешевле, чем покупка нового. Спасибо за отличный
+                            сервис!
+                        </p>
                     </div>
-                    <p>
-                        После того как мой принтер начал давать сбои, я обратился в эту компанию. Принтер починили
-                        быстро и
-                        качественно, теперь он работает как новый. Очень доволен обслуживанием, буду рекомендовать всем!
-                    </p>
-                </div>
-            </SplideSlide>
-            <SplideSlide>
-                <div class="content">
-                    <div class="content-header">
-                        <img alt="img" src="/assets/avatar/img_1.png">
-                        <div class="name">Дилноза Назарова</div>
+                </SplideSlide>
+                <SplideSlide>
+                    <div class="content">
+                        <div class="content-header">
+                            <img alt="img" src="/assets/avatar/img_2.png">
+                            <div class="name">Шухрат Абдуманнопов</div>
+                        </div>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>
+                            Мой плоттер перестал работать должным образом, и я обратился сюда. Специалисты быстро нашли
+                            причину и починили его. Теперь он печатает идеально, а я доволен качеством работы!
+                        </p>
                     </div>
-                    <div class="line">
-                        <hr>
+                </SplideSlide>
+                <SplideSlide>
+                    <div class="content">
+                        <div class="content-header">
+                            <img alt="img" src="/assets/avatar/img_3.png">
+                            <div class="name">Сабина Баратова</div>
+                        </div>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>
+                            Мой офисный принтер перестал печатать качественно, и я решила обратиться за помощью. Сервис был
+                            на высшем уровне, принтер починили оперативно, и теперь он работает без сбоев. Очень довольна
+                            результатом!
+                        </p>
                     </div>
-                    <p>
-                        Заправка картриджа в этой компании — это всегда быстро и без проблем. Мой принтер работает
-                        отлично, а заправка картриджа в разы дешевле, чем покупка нового. Спасибо за отличный
-                        сервис!
-                    </p>
-                </div>
-            </SplideSlide>
-            <SplideSlide>
-                <div class="content">
-                    <div class="content-header">
-                        <img alt="img" src="/assets/avatar/img_2.png">
-                        <div class="name">Шухрат Абдуманнопов</div>
+                </SplideSlide>
+                <SplideSlide>
+                    <div class="content">
+                        <div class="content-header">
+                            <img alt="img" src="/assets/avatar/img_4.png">
+                            <div class="name">Хуршид Эргашов</div>
+                        </div>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>
+                            Компания отлично заправила мой картридж, и теперь мой принтер работает как новый! Услуга
+                            быстрая, качественная и доступная. Очень доволен качеством и обслуживанием!
+                        </p>
                     </div>
-                    <div class="line">
-                        <hr>
+                </SplideSlide>
+                <SplideSlide>
+                    <div class="content">
+                        <div class="content-header">
+                            <img alt="img" src="/assets/avatar/img_5.png">
+                            <div class="name">Ирина Андреевна</div>
+                        </div>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>
+                            Заправка картриджей здесь — это удобно и выгодно! Мой принтер после заправки стал работать
+                            лучше, а качество печати заметно улучшилось. Спасибо за быстрый и качественный сервис!
+                        </p>
                     </div>
-                    <p>
-                        Мой плоттер перестал работать должным образом, и я обратился сюда. Специалисты быстро нашли
-                        причину и починили его. Теперь он печатает идеально, а я доволен качеством работы!
-                    </p>
-                </div>
-            </SplideSlide>
-            <SplideSlide>
-                <div class="content">
-                    <div class="content-header">
-                        <img alt="img" src="/assets/avatar/img_3.png">
-                        <div class="name">Сабина Баратова</div>
+                </SplideSlide>
+                <SplideSlide>
+                    <div class="content">
+                        <div class="content-header">
+                            <img alt="img" src="/assets/avatar/img_6.png">
+                            <div class="name">Темур Жавлонов</div>
+                        </div>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>
+                            С помощью этой компании мой принтер снова работает как новый! Ребята не только починили технику,
+                            но и дали полезные советы по обслуживанию. Очень рад, что обратился сюда!
+                        </p>
                     </div>
-                    <div class="line">
-                        <hr>
-                    </div>
-                    <p>
-                        Мой офисный принтер перестал печатать качественно, и я решила обратиться за помощью. Сервис был
-                        на высшем уровне, принтер починили оперативно, и теперь он работает без сбоев. Очень довольна
-                        результатом!
-                    </p>
-                </div>
-            </SplideSlide>
-            <SplideSlide>
-                <div class="content">
-                    <div class="content-header">
-                        <img alt="img" src="/assets/avatar/img_4.png">
-                        <div class="name">Хуршид Эргашов</div>
-                    </div>
-                    <div class="line">
-                        <hr>
-                    </div>
-                    <p>
-                        Компания отлично заправила мой картридж, и теперь мой принтер работает как новый! Услуга
-                        быстрая, качественная и доступная. Очень доволен качеством и обслуживанием!
-                    </p>
-                </div>
-            </SplideSlide>
-            <SplideSlide>
-                <div class="content">
-                    <div class="content-header">
-                        <img alt="img" src="/assets/avatar/img_5.png">
-                        <div class="name">Ирина Андреевна</div>
-                    </div>
-                    <div class="line">
-                        <hr>
-                    </div>
-                    <p>
-                        Заправка картриджей здесь — это удобно и выгодно! Мой принтер после заправки стал работать
-                        лучше, а качество печати заметно улучшилось. Спасибо за быстрый и качественный сервис!
-                    </p>
-                </div>
-            </SplideSlide>
-            <SplideSlide>
-                <div class="content">
-                    <div class="content-header">
-                        <img alt="img" src="/assets/avatar/img_6.png">
-                        <div class="name">Темур Жавлонов</div>
-                    </div>
-                    <div class="line">
-                        <hr>
-                    </div>
-                    <p>
-                        С помощью этой компании мой принтер снова работает как новый! Ребята не только починили технику,
-                        но и дали полезные советы по обслуживанию. Очень рад, что обратился сюда!
-                    </p>
-                </div>
-            </SplideSlide>
-        </Splide>
-        <div class="custom-navigation">
-            <button @click="prevSlide"><-</button>
-            <button @click="nextSlide">-></button>
+                </SplideSlide>
+            </Splide>
+            <div class="custom-navigation">
+                <button @click="prevSlide"><-</button>
+                <button @click="nextSlide">-></button>
+            </div>
         </div>
     </div>
-</template>
+    </template>
 
 <style scoped>
 [data-aos="fade-right"] {
     transition-duration: 3s !important;
+}
+
+.container-fluid {
+    background-color: #2c3e50;
 }
 
 .title {
