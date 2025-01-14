@@ -2,12 +2,8 @@
   <div class="app">
     <!-- Navbar -->
     <NavbarPage />
-
     <!-- Asosiy kontent -->
-
         <router-view />
-
-
     <!-- Footer -->
     <FooterPage />
   </div>
