@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-body-black">
@@ -44,35 +46,19 @@
 </template>
 
 <style scoped>
-/* Navbar asosiy dizayni */
 .container-fluid {
     background-color: #3a3e50;
-    display: flex;
     align-items: center;
     padding: 10px 20px;
 }
 
-/* Logo chap tomonda qoladi */
 .logo img {
     width: 120px;
-    position: relative;
     left: 250%;
 }
 
-/* Navbar menyu tarkibi */
 .navbar-nav {
-    display: flex;
-    justify-content: flex-end; /* Linklarni o'ng tomonga surish */
     align-items: center;
-}
-
-.navbar-collapse {
-    position: relative;
-    left: 100%;
-}
-
-.nav-item {
-    margin-left: 20px;
 }
 
 .nav-link {
@@ -99,43 +85,5 @@
     transform: scale(1.1);
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 576px) {
-    .container-fluid {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .logo img {
-        width: 80px;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .nav-item {
-        margin: 5px 0;
-    }
-
-    .btn {
-        margin: 10px 0;
-        padding: 5px 15px;
-    }
-}
-
-/* Planshet uchun (768px dan kichik ekranlar) */
-@media (max-width: 768px) {
-    .logo img {
-        width: 100px;
-    }
-
-    .navbar-nav {
-        justify-content: flex-end;
-    }
-}
 </style>
-<script setup lang="ts">
-</script>

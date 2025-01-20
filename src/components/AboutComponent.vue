@@ -91,7 +91,7 @@ h1 {
     margin: 80px auto;
     padding: 40px 80px;
     box-sizing: border-box;
-    transition:  transform 0.8s ease; /* Smooth transition */
+    transition:  transform 0.8s ease;
 }
 
 .content:hover{
@@ -126,6 +126,12 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+@media (max-width: 576px) {
+    .content {
+        padding: 10px;
+    }
 }
 
 </style>

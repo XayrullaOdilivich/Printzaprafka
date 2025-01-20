@@ -33,10 +33,10 @@ export default {
                     </p>
                 </div>
                 <div data-aos="fade-right" class="aos-btn">
-                    <a class="btn" href="/registration">Заказать ремонт</a>
+                    <a class="btn" id="btn-1" href="/registration">Заказать ремонт</a>
                 </div>
                 <div data-aos="fade-left" class="aos-btn">
-                    <a class="btn btn_1" href="/about">Узнать подробнее</a>
+                    <a class="btn" id="btn-2" href="/about">Узнать подробнее</a>
                 </div>
             </div>
             <div class="col-6 img-border">
@@ -57,24 +57,26 @@ export default {
 [data-aos="fade-up-left"] {
     transition-duration: 3s !important;
 }
+
 .aos-btn{
     display: inline;
 }
+
 .container-fluid {
     background-color: #2c3e50;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 240px); /* Pastdan va tepadan 120px joy */
-    padding: 120px 0; /* Umumiy yuqori va pastki bo'sh joy */
+    min-height: calc(100vh - 240px);
+    padding: 120px 0;
     margin: 0;
 }
 
 .borders-row {
     display: flex;
-    justify-content: center; /* Markazga joylash */
-    align-items: center; /* Vertikal o'rta */
-    gap: 120px; /* Ikkita border orasidagi masofa */
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
 }
 
 .text-border,
@@ -82,8 +84,7 @@ export default {
     border: 2px solid #2c3e50;
     border-radius: 10px;
     width: 550px;
-    height: auto; /* Ichki kontentga moslashadi */
-    min-height: 500px; /* Bir xil minimal balandlik */
+    height: 550px;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -91,31 +92,31 @@ export default {
 .title {
     color: cornflowerblue;
     font-size: 30px;
-    margin-bottom: 30px; /* Title ostida 30px joy */
+    margin-bottom: 30px;
 }
 
 .text {
     color: white;
     font-weight: bold;
     font-size: 50px;
-    margin-bottom: 20px; /* Text ostida 20px joy */
-    line-height: 1.1; /* Qatorlar orasini yanada yaqinlashtirish */
+    margin-bottom: 20px;
+    line-height: 1.1;
 }
 
 p {
     color: white;
-    margin-bottom: 20px; /* P ostida 20px joy */
+    margin-bottom: 20px;
 }
 
-.btn {
+#btn-1 {
     border: 2px solid #1a2e60;
     color: white;
     background-color: #1a2e60;
     padding: 10px 30px;
-    text-decoration: none; /* Tagidagi chiziqni o'chirish */
-    display: inline-block; /* Border chiqmasligi uchun */
-    margin-right: 10px; /* Tugmalar orasida joy */
-    transition: background-color 0.3s, color 0.3s; /* Hover uchun animatsiya */
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .btn:hover {
@@ -123,33 +124,87 @@ p {
     color: white;
 }
 
-.btn_1 {
+#btn-2 {
     border: 2px solid #007bff;
     color: white;
-    background-color: transparent; /* Asosiy fonni o'chirish */
+    background-color: transparent;
     padding: 10px 30px;
-    text-decoration: none; /* Tagidagi chiziqni o'chirish */
-    display: inline-block; /* Border chiqmasligi uchun */
-    transition: background-color 0.3s, color 0.3s; /* Hover uchun animatsiya */
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.btn_1:hover {
+#btn-2:hover {
     background-color: #007bff;
     color: white;
 }
 
 .img-border {
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
-    position: relative; /* Rasmni joylash uchun */
+    position: relative;
     display: flex;
-    justify-content: center; /* Rasmni gorizontal markazlash */
+    justify-content: center;
     align-items: center;
 }
 
 .img-border img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Tasvir ramkaga moslashishi */
-    transition: transform 0.3s ease-out; /* Animatsiya uchun transform */
+    object-fit: contain;
+    transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 580px) {
+    .aos-btn{
+        display: inline;
+    }
+
+    .title {
+        color: cornflowerblue;
+        font-size: 20px;
+        margin-bottom: 25px;
+        margin-left: 20%
+    }
+
+    .text {
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 20px 20%;
+        line-height: 1.1;
+    }
+
+    p {
+        color: white;
+        margin: 0 20%;
+    }
+
+    #btn-1 {
+        border: 2px solid #1a2e60;
+        color: white;
+        background-color: #1a2e60;
+        padding: 5px 10px;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 20%;
+        margin-top: 10px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    #btn-2 {
+        border: 2px solid #007bff;
+        color: white;
+        background-color: transparent;
+        padding: 5px 10px;
+        text-decoration: none;
+        margin-top: 10px;
+        display: inline-block;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .img-border {
+        width: 340px;
+        height: 340px;
+    }
 }
 </style>
