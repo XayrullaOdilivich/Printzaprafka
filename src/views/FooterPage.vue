@@ -12,19 +12,19 @@ export default {
             </div>
             <div class="col-3">
                 <div class="title">Компания</div>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav company">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">О нас</a>
+                        <a class="nav-link" href="/about">О нас</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Услуги</a>
+                        <a class="nav-link" href="/services">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Продажа и Бренды</a>
+                        <a class="nav-link" href="/sales-brand">Продажа и Бренды</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-3 contact">
                 <div class="title">Контакты</div>
                 <p>tafakkurxizmatsamarasimchj@gmail.com</p>
                 <a href="tel:+998940511494">+998940511494</a> <br />
@@ -46,13 +46,10 @@ export default {
 </template>
 
 <style scoped>
-/* Footer qoplamasi */
-.wrapper {
-    background-color: #3c3e50;
-    padding: 20px 0;
-}
+
 
 .container-fluid {
+    background-color: #3a3e50;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -103,44 +100,59 @@ a:hover {
     text-decoration: underline;
 }
 
-/* RESPONSIVE DESIGN */
 
-/* Mobil uchun (576px dan kichik ekranlar) */
 @media (max-width: 576px) {
     .container-fluid {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .title {
+        margin: 0 30%;
+    }
+
+    .company {
+        margin: 0 25%;
+        padding: 0;
     }
 
     .col-3 {
-        max-width: 100%;
-        margin: 10px 0;
-        text-align: center;
+        width: 100%;
+        flex: 1 1 calc(50% - 20px);
     }
 
     .btn {
         width: 100%;
-        text-align: center;
     }
 }
 
-/* Planshet uchun (768px dan kichik ekranlar) */
 @media (max-width: 768px) {
     .container-fluid {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
     }
 
     .col-3 {
-        max-width: 45%; /* Yarim ekran kengligi */
-        margin: 10px;
+        flex: 1 1 calc(50% - 20px);
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
-/* O'rta o'lchamli ekranlar uchun (992px dan kichik ekranlar) */
 @media (max-width: 992px) {
     .col-3 {
-        max-width: 30%; /* Uchdan bir ekran kengligi */
+        flex: 1 1 calc(33.33% - 20px);
+    }
+
+    .btn {
+        width: auto;
     }
 }
 </style>

@@ -69,29 +69,35 @@ hr {
 .border-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Elementlar mustaqil balandlikda bo'lsin */
-    gap: 10px; /* Qutilar orasidagi masofa */
+    align-items: center;
+    gap: 10px;
     padding: 20px;
 }
 
 .border-box {
-    flex: none; /* Flex ta'sirini yo'q qilish */
-    width: 300px; /* Qutilarning kengligi */
+    flex: none;
+    width: 300px;
     border: 0 solid;
-    backdrop-filter: blur(5px); /* Xiralik effekti */
-    border-radius: 10px; /* Yumaloq burchaklar */
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
     background-color: rgba(100, 100, 100, 0.5);
 }
 
 .border-box.center {
-    height: 320px; /* O'rtadagi balandlik */
+    height: 320px;
 }
 
 .border-box.left, .border-box.right  {
     position: relative;
     top: 0;
-    height: 270px; /* Chetdagi borderlar balandligi */
+    height: 270px;
 }
 
+@media (max-width: 1000px) {
+    .border-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 </style>

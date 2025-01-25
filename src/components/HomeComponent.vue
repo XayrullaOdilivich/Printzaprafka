@@ -26,7 +26,9 @@ export default {
             <div class="col-6 text-border">
                 <div data-aos="fade-right" class="title">Надежность и качество</div>
                 <div data-aos="fade-right" class="text">Ремонт и заправка картриджей. Оперативный выезд мастера на дом и в офис!</div>
-                <div data-aos="fade-up-left">
+                <div data-aos="fade-up-left"
+                     data-aos-duration="3000"
+                >
                     <p>
                         Предлагаем качественный ремонт принтеров, компьютеров, моноблоков и другой офисной техники, а также
                         заправку картриджей с гарантией.
@@ -49,13 +51,16 @@ export default {
 
 <style scoped>
 [data-aos="fade-right"] {
-    transition-duration: 3s !important;
+    transition-duration: 3s;
+    opacity: 1;
 }
 [data-aos="fade-left"] {
-    transition-duration: 3s !important;
+    transition-duration: 3s ;
+    opacity: 1;
 }
 [data-aos="fade-up-left"] {
     transition-duration: 3s !important;
+    opacity: 1;
 }
 
 .aos-btn{

@@ -52,7 +52,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container-fluid">
         <h1>Продажа и Бренды</h1>
         <hr/>
         <div
@@ -62,12 +62,12 @@ export default {
             data-aos="fade-right"
         >
             <div class="row">
-                <div class="col-6 img-container">
+                <div class="col-12 img-container">
                     <div class="img">
                     <img :alt="'Image ' + (index + 1)" :src="`/assets/Image/img_${index + 1}.png`"/>
                     </div>
                 </div>
-                <div class="col-6 content-container">
+                <div class="col-12 col-md-6 content-container">
                     <div class="title">
                         Партнерство с <span class="highlight">{{ brand }}</span>
                     </div>
@@ -81,7 +81,8 @@ export default {
     </div>
 </template>
 <style scoped>
-.container {
+.container-fluid {
+    background-color: #2c3e50;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +155,7 @@ img {
 }
 
 .img-container img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effektninig silliq bo'lishini ta'minlaydi */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .img-container img:hover {
@@ -194,6 +195,16 @@ p {
 
 .toggle-btn:hover {
     background-color: #282c34;
+}
+
+@media (max-width: 992px) {
+    .canon {
+        width: 80%;
+    }
+    .img-container,
+    .content-container {
+        width: 100%;
+    }
 }
 </style>
 

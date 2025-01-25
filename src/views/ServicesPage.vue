@@ -15,13 +15,13 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container-fluid">
         <div class="title">
             <h1>Наша Услуги</h1>
         </div>
         <hr />
         <div data-aos="fade-up"
-             data-aos-anchor-placement="bottom-bottom">
+             data-aos-duration="3000">
             <div class="row">
                 <div class="printer">
                     <div class="content">
@@ -125,8 +125,9 @@ export default {
 [data-aos="fade-up"] {
     transition-duration: 3s !important;
 }
-.container {
-    width: 90%;
+.container-fluid {
+    background-color: #2c3e50;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;

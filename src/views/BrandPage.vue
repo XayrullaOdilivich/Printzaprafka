@@ -92,5 +92,46 @@ img:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 1300px) {
+    .container-fluid {
+        padding: 0 100px;
+    }
 
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 50px;
+    }
+
+    .row {
+        grid-template-columns: repeat(1, 1fr); /* 1 ta ustun */
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    img {
+        width: 200px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 24px;
+    }
+
+    img {
+        width: 180px;
+    }
+}
 </style>

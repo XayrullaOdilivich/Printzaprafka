@@ -132,6 +132,10 @@ h1 {
     .content {
         padding: 10px;
     }
+
+    a {
+        margin: 50px 20%;
+    }
 }
 
 </style>

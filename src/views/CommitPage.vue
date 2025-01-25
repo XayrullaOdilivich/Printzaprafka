@@ -20,14 +20,17 @@ export default {
     <div class="container-fluid">
         <div class="container" data-aos="fade-right" >
             <div class="title">Отзыв клиентов</div>
-            <Splide ref="splide" :options="{
-            type: 'loop',
-            autoplay: true,
-            perPage: 3,
-            perMove: 1,
-            gap: '1rem',
-            arrows: false
-        }">
+            <Splide
+                ref="splide"
+                :options="{
+                    type: 'loop',
+                    autoplay: true,
+                    perPage: 3,
+                    perMove: 1,
+                    gap: '1rem',
+                    arrows: false
+                }
+            ">
                 <SplideSlide>
                     <div class="content">
                         <div class="content-header">

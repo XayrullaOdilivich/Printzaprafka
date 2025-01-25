@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="form">
       <h1>Связаться с нами</h1>
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <form>
           <input class="form-control-lg" type="text" placeholder="Имя" aria-label=".form-control-lg example">
           <input class="form-control-lg" type="text" placeholder="Фамилия" aria-label=".form-control-lg example">
@@ -53,25 +53,24 @@ input:focus {
   outline: none;
 }
 
-/* Number input tugmalarini yashirish */
 input[type="number"] {
-  -moz-appearance: textfield; /* Firefox uchun */
+  -moz-appearance: textfield;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none; /* Chrome, Safari uchun */
-  margin: 0; /* Tugmani olib tashlash */
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-/* Button uslubi */
+
 .form-button {
   width: 100%;
   margin: 15px 0;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #0056b3; /* Ko'k rang */
+  background-color: #0056b3;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -79,11 +78,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .form-button:hover {
-  transform: scale(1.05); /* Kattalashish */
-  background-color: #007bff; /* Quyuqroq ko'k rang */
+  transform: scale(1.05);
+  background-color: #007bff
 }
 
-/* H1 uslubi */
 h1 {
   margin: 15px;
   color: white;
