@@ -182,7 +182,7 @@ p {
 }
 
 .toggle-btn {
-    margin-top: 20px;
+    margin: 20px;
     padding: 10px 20px;
     font-size: 16px;
     background-color: #1a2e60;

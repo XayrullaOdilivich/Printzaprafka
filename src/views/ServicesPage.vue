@@ -16,108 +16,109 @@ export default {
 
 <template>
     <div class="container-fluid">
-        <div class="title">
-            <h1>Наша Услуги</h1>
-        </div>
-        <hr />
-        <div data-aos="fade-up"
-             data-aos-duration="3000">
-            <div class="row">
-                <div class="printer">
-                    <div class="content">
-                        <h3>РЕМОНТ МФУ</h3>
-                        <h4>принтеров</h4>
-                        <p>Все бренды</p>
+        <div class="container">
+            <div class="title">
+                <h1>Наша Услуги</h1>
+            </div>
+            <hr />
+            <div data-aos="fade-up"
+                 data-aos-duration="3000">
+                <div class="row">
+                    <div class="printer">
+                        <div class="content">
+                            <h3>РЕМОНТ МФУ</h3>
+                            <h4>принтеров</h4>
+                            <p>Все бренды</p>
+                        </div>
+                        <img alt="img" class="hover-image" src="@/ServiceImage/img.png">
+                        <button class="btn" @click="PrintList = true">Подробнее</button>
+                        <div v-if="PrintList" class="list">
+                            <button class="close-btn" @click="PrintList = false">X</button>
+                            <h3 class="information">Детали</h3>
+                            <p>Ремонт МФУ принтеров всех брендов. Замена картриджей, ремонт печатающей головки, восстановление
+                                фотобарабана, настройка сетей.</p>
+                        </div>
                     </div>
-                    <img alt="img" class="hover-image" src="@/ServiceImage/img.png">
-                    <button class="btn" @click="PrintList = true">Подробнее</button>
-                    <div v-if="PrintList" class="list">
-                        <button class="close-btn" @click="PrintList = false">X</button>
-                        <h3 class="information">Детали</h3>
-                        <p>Ремонт МФУ принтеров всех брендов. Замена картриджей, ремонт печатающей головки, восстановление
-                            фотобарабана, настройка сетей.</p>
+                    <div class="notebook">
+                        <div class="content">
+                            <h3>РЕМОНТ</h3>
+                            <h4>Notebook</h4>
+                            <p>Ремонт ноутбуков всех марок и моделей</p>
+                        </div>
+                        <img alt="img" class="hover-image" src="@/ServiceImage/img_1.png">
+                        <button class="btn" @click="NotebookList = true">Подробнее</button>
+                        <div v-if="NotebookList" class="list">
+                            <button class="close-btn" @click="NotebookList = false">X</button>
+                            <h3 class="information">Детали</h3>
+                            <p>Профессиональный ремонт ноутбуков. Замена матрицы, клавиатуры, жесткого диска, ремонт материнской
+                                платы и многое другое. Быстрая и надежная диагностика.</p>
+                        </div>
+                    </div>
+                    <div class="shreder">
+                        <div class="content">
+                            <h3>РЕМОНТ</h3>
+                            <h4>Шредеров</h4>
+                            <p>Решение проблемы. Ремонт и обслуживание шредеров</p>
+                        </div>
+                        <img alt="img" class="hover-image" src="@/ServiceImage/img_2.png">
+                        <button class="btn" @click="ShredrovList = true">Подробнее</button>
+                        <div v-if="ShredrovList" class="list">
+                            <button class="close-btn" @click="ShredrovList = false">X</button>
+                            <h3 class="information">Детали</h3>
+                            <p>Ремонт и техническое обслуживание шредеров различных производителей. Быстрое восстановление
+                                работоспособности вашего оборудования. Замена изношенных деталей.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="notebook">
-                    <div class="content">
-                        <h3>РЕМОНТ</h3>
-                        <h4>Notebook</h4>
-                        <p>Ремонт ноутбуков всех марок и моделей</p>
+                <div class="row">
+                    <div class="termo_print">
+                        <div class="content">
+                            <h3>РЕМОНТ МФУ</h3>
+                            <h4>Термопринт</h4>
+                            <p>С гарантией</p>
+                        </div>
+                        <img alt="img" class="hover-image" src="@/ServiceImage/img_3.png">
+                        <button class="btn" @click="TermoPrintList = true">Подробнее</button>
+                        <div v-if="TermoPrintList" class="list">
+                            <button class="close-btn" @click="TermoPrintList = false">X</button>
+                            <h3 class="information">Детали</h3>
+                            <p>Качественный ремонт термопринтеров с гарантией. Замена термоэлемента, роликов, ремонт
+                                электроники, настройка и калибровка.</p>
+                        </div>
                     </div>
-                    <img alt="img" class="hover-image" src="@/ServiceImage/img_1.png">
-                    <button class="btn" @click="NotebookList = true">Подробнее</button>
-                    <div v-if="NotebookList" class="list">
-                        <button class="close-btn" @click="NotebookList = false">X</button>
-                        <h3 class="information">Детали</h3>
-                        <p>Профессиональный ремонт ноутбуков. Замена матрицы, клавиатуры, жесткого диска, ремонт материнской
-                            платы и многое другое. Быстрая и надежная диагностика.</p>
+                    <div class="plotterov">
+                        <div class="content">
+                            <h3>РЕМОНТ</h3>
+                            <h4>Плоттеров</h4>
+                            <p>Любая сложность</p>
+                        </div>
+                        <img alt="img" class="hover-image" src="@/ServiceImage/img_4.png">
+                        <button class="btn" @click="PlotterovList = true">Подробнее</button>
+                        <div v-if="PlotterovList" class="list">
+                            <button class="close-btn" @click="PlotterovList = false">X</button>
+                            <h3 class="information">Детали</h3>
+                            <p>Ремонт плоттеров любой сложности. Замена чернильных голов, ремонт механизмов подачи бумаги,
+                                восстановление электронных плат.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="shreder">
-                    <div class="content">
-                        <h3>РЕМОНТ</h3>
-                        <h4>Шредеров</h4>
-                        <p>Решение проблемы. Ремонт и обслуживание шредеров</p>
-                    </div>
-                    <img alt="img" class="hover-image" src="@/ServiceImage/img_2.png">
-                    <button class="btn" @click="ShredrovList = true">Подробнее</button>
-                    <div v-if="ShredrovList" class="list">
-                        <button class="close-btn" @click="ShredrovList = false">X</button>
-                        <h3 class="information">Детали</h3>
-                        <p>Ремонт и техническое обслуживание шредеров различных производителей. Быстрое восстановление
-                            работоспособности вашего оборудования. Замена изношенных деталей.</p>
+                    <div class="kompyuter">
+                        <div class="content">
+                            <h3>РЕМОНТ</h3>
+                            <h4>КОМПЬЮТЕРОВ</h4>
+                            <p>Установка Windows программы.</p>
+                        </div>
+                        <img alt="img" class="hover-image" src="@/ServiceImage/img_5.png">
+                        <button class="btn" @click="KompyuterList = true">Подробнее</button>
+                        <div v-if="KompyuterList" class="list">
+                            <button class="close-btn" @click="KompyuterList = false">X</button>
+                            <h3 class="information">Детали</h3>
+                            <p>Опытные специалисты устранят любые неполадки вашего компьютера, от программных сбоев до
+                                аппаратных поломок. Гарантия на выполненные работы.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="termo_print">
-                    <div class="content">
-                        <h3>РЕМОНТ МФУ</h3>
-                        <h4>Термопринт</h4>
-                        <p>С гарантией</p>
-                    </div>
-                    <img alt="img" class="hover-image" src="@/ServiceImage/img_3.png">
-                    <button class="btn" @click="TermoPrintList = true">Подробнее</button>
-                    <div v-if="TermoPrintList" class="list">
-                        <button class="close-btn" @click="TermoPrintList = false">X</button>
-                        <h3 class="information">Детали</h3>
-                        <p>Качественный ремонт термопринтеров с гарантией. Замена термоэлемента, роликов, ремонт
-                            электроники, настройка и калибровка.</p>
-                    </div>
-                </div>
-                <div class="plotterov">
-                    <div class="content">
-                        <h3>РЕМОНТ</h3>
-                        <h4>Плоттеров</h4>
-                        <p>Любая сложность</p>
-                    </div>
-                    <img alt="img" class="hover-image" src="@/ServiceImage/img_4.png">
-                    <button class="btn" @click="PlotterovList = true">Подробнее</button>
-                    <div v-if="PlotterovList" class="list">
-                        <button class="close-btn" @click="PlotterovList = false">X</button>
-                        <h3 class="information">Детали</h3>
-                        <p>Ремонт плоттеров любой сложности. Замена чернильных голов, ремонт механизмов подачи бумаги,
-                            восстановление электронных плат.</p>
-                    </div>
-                </div>
-                <div class="kompyuter">
-                    <div class="content">
-                        <h3>РЕМОНТ</h3>
-                        <h4>КОМПЬЮТЕРОВ</h4>
-                        <p>Установка Windows программы.</p>
-                    </div>
-                    <img alt="img" class="hover-image" src="@/ServiceImage/img_5.png">
-                    <button class="btn" @click="KompyuterList = true">Подробнее</button>
-                    <div v-if="KompyuterList" class="list">
-                        <button class="close-btn" @click="KompyuterList = false">X</button>
-                        <h3 class="information">Детали</h3>
-                        <p>Опытные специалисты устранят любые неполадки вашего компьютера, от программных сбоев до
-                            аппаратных поломок. Гарантия на выполненные работы.</p>
-                    </div>
-                </div>
-            </div>
         </div>
-
     </div>
 </template>
 
@@ -128,7 +129,6 @@ export default {
 .container-fluid {
     background-color: #2c3e50;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;

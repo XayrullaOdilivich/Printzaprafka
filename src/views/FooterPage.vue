@@ -5,56 +5,51 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper">
-        <div class="container-fluid">
-            <div class="col-3">
-                <img alt="" src="/assets/Image/img.png" />
-            </div>
-            <div class="col-3">
-                <div class="title">Компания</div>
-                <ul class="navbar-nav company">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/services">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sales-brand">Продажа и Бренды</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-3 contact">
-                <div class="title">Контакты</div>
-                <p>tafakkurxizmatsamarasimchj@gmail.com</p>
-                <a href="tel:+998940511494">+998940511494</a> <br />
-                <a href="https://www.google.com/maps/place//@41.2423931,69.2797347,52m/data=!3m2!1e3!4b1!4m6!1m5!3m4!2zNDHCsDE0JzMyLjYiTiA2OcKwMTYnNDcuNCJF!8m2!3d41.2423889!4d69.2798333?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D">
-                    Адрес Сиргалийский район, махалля Номданак, улица Файзли, дом 11.
-                </a>
-            </div>
-            <div class="col-3">
-                <div class="title">Вызов мастера</div>
-                <p>
-                    Сломался ли ваш принтер или другая техника? Если у вас нет возможности привезти оборудование в мастерскую, наши
-                    специалисты готовы помочь! Все, что вам нужно сделать — это позвонить, и мы приедем к вам для диагностики и
-                    ремонта.
-                </p>
-                <a class="btn" href="/registration">На Выезд</a>
-            </div>
+    <div class="container-fluid">
+        <div class="col-3">
+            <img alt="" src="/assets/Image/img.png" />
+        </div>
+        <div class="col-3">
+            <div class="title">Компания</div>
+            <ul class="navbar-nav company">
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sales-brand">Продажа и Бренды</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-3 contact">
+            <div class="title">Контакты</div>
+            <p>tafakkurxizmatsamarasimchj@gmail.com</p>
+            <a href="tel:+998940511494">+998940511494</a> <br />
+            <a href="https://www.google.com/maps/place//@41.2423931,69.2797347,52m/data=!3m2!1e3!4b1!4m6!1m5!3m4!2zNDHCsDE0JzMyLjYiTiA2OcKwMTYnNDcuNCJF!8m2!3d41.2423889!4d69.2798333?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D">
+                Адрес Сиргалийский район, махалля Номданак, улица Файзли, дом 11.
+            </a>
+        </div>
+        <div class="col-3">
+            <div class="title">Вызов мастера</div>
+            <p>
+                Сломался ли ваш принтер или другая техника? Если у вас нет возможности привезти оборудование в мастерскую, наши
+                специалисты готовы помочь! Все, что вам нужно сделать — это позвонить, и мы приедем к вам для диагностики и
+                ремонта.
+            </p>
+            <a class="btn" href="/registration">На Выезд</a>
         </div>
     </div>
 </template>
 
 <style scoped>
-
-
 .container-fluid {
     background-color: #3a3e50;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
     color: white;

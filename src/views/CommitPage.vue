@@ -5,32 +5,55 @@ import {Splide, SplideSlide} from '@splidejs/vue-splide';
 export default {
     name: "CommitPage",
     components: {Splide, SplideSlide},
+    data() {
+        return {
+            perPage: 3,
+        };
+    },
     methods: {
         prevSlide() {
             this.$refs.splide.go('<');
         },
         nextSlide() {
             this.$refs.splide.go('>');
-        }
-    }
-}
+        },
+        updatePerPage() {
+            const width = window.innerWidth;
+            if (width < 768) {
+                this.perPage = 1;
+            } else if (width < 1200) {
+                this.perPage = 2;
+            } else {
+                this.perPage = 3;
+            }
+        },
+    },
+    mounted() {
+        this.updatePerPage();
+        window.addEventListener('resize', this.updatePerPage);
+    },
+    beforeDestroy() {
+        window.removeEventListener('resize', this.updatePerPage)
+    },
+};
 </script>
+
 
 <template>
     <div class="container-fluid">
-        <div class="container" data-aos="fade-right" >
+        <div class="container" data-aos="fade-right">
             <div class="title">Отзыв клиентов</div>
             <Splide
                 ref="splide"
                 :options="{
-                    type: 'loop',
-                    autoplay: true,
-                    perPage: 3,
-                    perMove: 1,
-                    gap: '1rem',
-                    arrows: false
-                }
-            ">
+                  type: 'loop',
+                  autoplay: true,
+                  perPage: perPage,
+                  perMove: 1,
+                  gap: '1rem',
+                  arrows: false
+                }"
+            >
                 <SplideSlide>
                     <div class="content">
                         <div class="content-header">
@@ -43,7 +66,8 @@ export default {
                         <p>
                             После того как мой принтер начал давать сбои, я обратился в эту компанию. Принтер починили
                             быстро и
-                            качественно, теперь он работает как новый. Очень доволен обслуживанием, буду рекомендовать всем!
+                            качественно, теперь он работает как новый. Очень доволен обслуживанием, буду рекомендовать
+                            всем!
                         </p>
                     </div>
                 </SplideSlide>
@@ -88,8 +112,10 @@ export default {
                             <hr>
                         </div>
                         <p>
-                            Мой офисный принтер перестал печатать качественно, и я решила обратиться за помощью. Сервис был
-                            на высшем уровне, принтер починили оперативно, и теперь он работает без сбоев. Очень довольна
+                            Мой офисный принтер перестал печатать качественно, и я решила обратиться за помощью. Сервис
+                            был
+                            на высшем уровне, принтер починили оперативно, и теперь он работает без сбоев. Очень
+                            довольна
                             результатом!
                         </p>
                     </div>
@@ -134,7 +160,8 @@ export default {
                             <hr>
                         </div>
                         <p>
-                            С помощью этой компании мой принтер снова работает как новый! Ребята не только починили технику,
+                            С помощью этой компании мой принтер снова работает как новый! Ребята не только починили
+                            технику,
                             но и дали полезные советы по обслуживанию. Очень рад, что обратился сюда!
                         </p>
                     </div>
@@ -146,7 +173,7 @@ export default {
             </div>
         </div>
     </div>
-    </template>
+</template>
 
 <style scoped>
 [data-aos="fade-right"] {
@@ -188,29 +215,29 @@ export default {
     background: radial-gradient(circle, #2c3e50 10%, #404247);
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Markazlashtirish */
-    align-items: center; /* Markazlashtirish */
+    justify-content: center;
+    align-items: center;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* Ramkadan tashqaridagi narsalarni yashirish */
-    transition: transform 0.9s ease, box-shadow 0.3s ease, background 0.5s ease; /* Smooth transition */
+    overflow: hidden;
+    transition: transform 0.9s ease, box-shadow 0.3s ease, background 0.5s ease;
 }
 
 .content::before {
     content: "";
     position: absolute;
-    bottom: 0; /* Ramkaning pastki qismida joylashadi */
-    left: 50%; /* Markazlash */
-    transform: translateX(-50%); /* Markazlashtirish uchun */
-    width: 100%; /* Ramkaning kengligiga teng */
-    height: 70px; /* Radiusli chiziqning balandligi */
-    background: linear-gradient(to bottom, black 10%, #2c3e50); /* Ko'kdan qora rangga o'tish */
-    border-radius: 70px 70px 0 0; /* Yuqori qismini radiusli qilish */
-    z-index: 1; /* Yozuvlar ustida bo‘ladi */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to bottom, black 10%, #2c3e50);
+    border-radius: 70px 70px 0 0;
+    z-index: 1;
 }
 
 .content:hover::before {
-    background: linear-gradient(to bottom, black 10%, #1a2e80); /* Hoverda yangi gradient */
+    background: linear-gradient(to bottom, black 10%, #1a2e80);
 }
 
 p {
@@ -218,27 +245,27 @@ p {
     font-size: 14px;
     line-height: 1.5;
     margin-top: 10px;
-    position: relative; /* Pseudo-element ustida turishi uchun */
-    z-index: 2; /* Chiziqdan yuqorida bo‘lishi uchun */
-    transition: transform 0.3s ease; /* Smooth transition */
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
 }
 
 .content:hover p {
-    transform: scale(1.05); /* Hoverda yozuvlar bir oz kattalashadi */
+    transform: scale(1.05);
 }
 
 
 .content:hover {
-    transform: scale(1.1) rotate(5deg); /* Kattalashtirish va qiyshaytirish */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* So'ya qalinlashishi */
-    background: radial-gradient(circle, #1a2e80 10%, #404247); /* Hoverda ko'proq ko'k */
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    background: radial-gradient(circle, #1a2e80 10%, #404247);
 }
 
 .content-header {
-    display: flex; /* Rasm va ismni yonma-yon joylash */
-    align-items: center; /* Vertikal markazlashtirish */
-    gap: 15px; /* Rasm va ism orasidagi masofa */
-    margin-bottom: 20px; /* Pastdan masofa qo'shish */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 img {
@@ -246,19 +273,19 @@ img {
     height: 80px;
     border-radius: 50%;
     border: 3px solid deeppink;
-    transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .content:hover img {
-    border-color: blue; /* Ramka rangi ko'k bo'ladi */
-    transform: scale(1.1); /* Rasm kattalashadi */
+    border-color: blue;
+    transform: scale(1.1);
 }
 
 .name {
     font-size: 25px;
     font-weight: bold;
     color: white;
-    transition: color 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease;
 }
 
 .content:hover .name {
@@ -270,5 +297,12 @@ img {
     height: 3px;
     width: 95%;
     margin: 15px 0;
+}
+
+@media (max-width: 992px) {
+    .content {
+        width: 90%;
+        height: 90%;
+    }
 }
 </style>
