@@ -76,10 +76,10 @@ export default {
     animation: pulse 2s infinite ease-in-out;
 }
 
-/* Footerni yashirish */
+
 footer {
   position: fixed;
-  bottom: -100%; /* Tashqarida saqlash */
+  bottom: -100%;
   left: 0;
   width: 100%;
   background-color: #3c3e50;
@@ -90,22 +90,22 @@ footer {
 }
 
 footer.visible {
-  bottom: 0; /* Ko'rinadigan holat */
+  bottom: 0;
 }
 
 
 @keyframes pulse {
     0% {
-        transform: scale(1); /* Boshlanishda oddiy kattalik */
-        box-shadow: 0 8px 20px rgba(0, 0, 255, 1); /* Soya ko'k rangda */
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(0, 0, 255, 1);
     }
     50% {
-        transform: scale(1.1); /* O'rtada kattalashadi */
-        box-shadow: 0 12px 60px mediumblue; /* Kattalashgan soya */
+        transform: scale(1.1);
+        box-shadow: 0 12px 60px mediumblue;
     }
     100% {
-        transform: scale(1); /* Yakunda boshlanish holatiga qaytadi */
-        box-shadow: 0 8px 20px rgba(0, 0, 255, 1); /* Soya asl holatiga qaytadi */
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(0, 0, 255, 1);
     }
 }
 </style>

@@ -8,7 +8,6 @@
                 <img src="/assets/Image/img.png" alt="Logo" />
             </div>
 
-            <!-- Burger menyu tugmasi (kichik ekranlar uchun) -->
             <button
                 class="navbar-toggler"
                 type="button"
@@ -67,7 +66,6 @@
     text-decoration: none;
 }
 
-/* O'ng tomondagi tugma */
 .btn {
     border: 2px solid blue;
     color: white;

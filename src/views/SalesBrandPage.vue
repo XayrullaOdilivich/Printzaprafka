@@ -1,15 +1,14 @@
 <script>
-import AOS from 'aos'; // AOS kutubxonasini import qilamiz
-import 'aos/dist/aos.css'; // AOS uchun CSSni import qilamiz
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default {
     name: "SalesBrandPage",
     mounted() {
-        // AOSni ishga tushuramiz va sozlashlar kiritamiz
         AOS.init({
-            duration: 2000, // Animatsiya davomiyligi
-            easing: 'ease-out', // Silliq boshlanish va to'xtash
-            once: true, // Animatsiya faqat bir marta bo'lishi kerak
+            duration: 2000,
+            easing: 'ease-out',
+            once: true,
         });
     },
     data() {
