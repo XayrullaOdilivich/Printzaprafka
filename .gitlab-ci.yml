@@ -1,9 +1,30 @@
+image: node:22
+
 stages:
+  - build
   - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
 
 deploy:
   stage: deploy
   script:
+    # GitHub repositoryga birinchi marta push qilish uchun
+    - echo "# Printzaprafka" >> README.md
+    - git init
+    - git add README.md
+    - git commit -m "first commit"
+    - git branch -M main
     - git remote add github https://$GITHUB_TOKEN@github.com/XayrullaOdilivich/Printzaprafka.git
-    - git push github $CI_COMMIT_REF_NAME:main
-
+    - git push -u github main
