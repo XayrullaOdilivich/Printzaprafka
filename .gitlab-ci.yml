@@ -5,4 +5,5 @@ deploy:
   stage: deploy
   script:
     - git remote add github https://$GITHUB_TOKEN@github.com/XayrullaOdilivich/Printzaprafka.git
-    - git push github $CI_COMMIT_REF_NAME
+    - git push github $CI_COMMIT_REF_NAME:main
+
