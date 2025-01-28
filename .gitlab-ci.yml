@@ -4,11 +4,12 @@ deploy:
     # Git konfiguratsiyasini o'rnatish
     - git config --global user.email "xayrullo936@gmail.com"
     - git config --global user.name "Xayrulla Ochildiyev"
-    # GitHub repositoryga sozlash
-    - echo "# Printzaprafka" >> README.md
-    - git add .
-    - git commit -m "initial commit" || echo "Commit allaqachon mavjud"
+    # Agar HEAD detached bo'lsa, yangi branch yaratish
+    - git checkout -b temp-branch || echo "Branch allaqachon mavjud"
+    # Branchni 'main'ga o'tkazish
     - git branch -M main
+    # GitHub repositoryni sozlash
     - git remote remove origin || echo "Remote origin mavjud emas"
     - git remote add origin https://github.com/XayrullaOdilivich/Printzaprafka.git
+    # Push qilish
     - git push -u origin main || echo "Push muvaffaqiyatsiz bo'ldi"
