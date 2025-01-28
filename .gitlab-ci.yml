@@ -20,7 +20,6 @@ build:
 deploy:
   stage: deploy
   script:
-    # GitHub repositoryga birinchi marta push qilish uchun
     - echo "# Printzaprafka" >> README.md
     - git init
     - git add README.md
