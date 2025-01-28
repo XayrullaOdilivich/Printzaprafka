@@ -1,14 +1,24 @@
-deploy:
-  stage: deploy
-  script:
-    # Git konfiguratsiyasini sozlash
-    - git config --global user.email "xayrullo936@gmail.com"
-    - git config --global user.name "Xayrulla Ochildiyev"
-    # Agar HEAD detached bo'lsa, yangi branch yaratish
-    - git checkout -b temp-branch || echo "Branch allaqachon mavjud"
-    - git branch -M main
-    # GitHub repositoryni sozlash
-    - git remote remove origin || echo "Remote origin mavjud emas"
-    - git remote add origin https://${DEPLOY_TOKEN}@github.com/XayrullaOdilivich/Printzaprafka.git
-    # GitHub'ga push qilish
-    - git push -u origin main || echo "Push muvaffaqiyatsiz bo'ldi"
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22' # Node.js 22 versiyasi o'rnatiladi
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build
+        run: npm run build
