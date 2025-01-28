@@ -28,6 +28,7 @@ deploy:
     - echo "# Printzaprafka" >> README.md
     - git add .  # Barcha fayllarni qo'shish
     - git commit -m "first commit"
-    - git branch -M main
+    - git checkout -b main  # Yangi "main" branch yaratish va unga o'tish
     - git remote add origin https://github.com/XayrullaOdilivich/Printzaprafka.git
     - git push -u origin main
+
