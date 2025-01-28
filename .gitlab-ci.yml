@@ -1,24 +1,22 @@
-name: CI Pipeline
+stages:
+  - test
+  - build
+  - deploy
 
-on:
-  push:
-    branches:
-      - main
+test_job:
+  stage: test
+  script:
+    - npm install
+    - npm test
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+build_job:
+  stage: build
+  script:
+    - npm run build
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '22' # Node.js 22 versiyasi o'rnatiladi
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run build
-        run: npm run build
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Deploying to production"
+  only:
+    - main
