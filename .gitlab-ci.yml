@@ -1,22 +1,3 @@
-image: node:22
-
-stages:
-  - build
-  - deploy
-
-cache:
-  paths:
-    - node_modules/
-
-build:
-  stage: build
-  script:
-    - npm install
-    - npm run build
-  artifacts:
-    paths:
-      - dist/
-
 deploy:
   stage: deploy
   script:
@@ -26,8 +7,8 @@ deploy:
     # GitHub repositoryga sozlash
     - echo "# Printzaprafka" >> README.md
     - git add .
-    - git commit -m "first commit" || echo "Commit allaqachon mavjud"
-    - git branch -M main || echo "Branch main allaqachon mavjud"
-    - git remote remove origin || echo "Remote origin yo'q edi"
+    - git commit -m "initial commit" || echo "Commit allaqachon mavjud"
+    - git branch -M main
+    - git remote remove origin || echo "Remote origin mavjud emas"
     - git remote add origin https://github.com/XayrullaOdilivich/Printzaprafka.git
-    - git push -u origin main
+    - git push -u origin main || echo "Push muvaffaqiyatsiz bo'ldi"
