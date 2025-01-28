@@ -28,7 +28,6 @@ deploy:
     - git init
     - git add README.md
     - git commit -m "first commit"
-    - git branch -M main
     - git remote add github https://$GITHUB_TOKEN@github.com/XayrullaOdilivich/Printzaprafka.git
     - git push -u github main
 
