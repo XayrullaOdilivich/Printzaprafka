@@ -238,9 +238,6 @@ h4 {
     color: #007bff;
 }
 
-
-
-
 h3, h4 {
     display: inline;
 }
