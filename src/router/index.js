@@ -18,22 +18,22 @@ const routes = [
   },
   { path: "/sales-brand",
     name: "SalesBrand",
-    component: () => import('@/views/SalesBrandPage')
+    component: () => import('@/views/SalesBrandPage.vue')
   },
   {
     path: "/brand",
     name: "Brand",
-    component: () => import('@/views/BrandPage')
+    component: () => import('@/views/BrandPage.vue')
   },
   {
     path: "/commit",
     name: "Commit",
-    component: () => import('@/views/CommitPage')
+    component: () => import('@/views/CommitPage.vue')
   },
   {
     path: "/registration",
     name: "Registration",
-    component: () => import('@/views/RegistrationPage')
+    component: () => import('@/views/RegistrationPage.vue')
   }
 ];
 
