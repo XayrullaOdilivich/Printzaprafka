@@ -18,28 +18,9 @@
 <script>
 import NavbarPage from "@/views/NavbarPage.vue";
 import FooterPage from "@/views/FooterPage.vue";
-import SalesBrandPage from "@/views/SalesBrandPage.vue";
-import ServicesPage from "@/views/ServicesPage.vue";
-import AboutPage from "@/views/AboutPage.vue";
-import BrandPage from "@/views/BrandPage.vue";
-import CommitPage from "@/views/CommitPage.vue";
-import ServicesComponent from "@/components/ServicesComponent.vue";
-import HomeComponent from "@/components/HomeComponent.vue";
-import Home_1Component from "@/components/Home_1Component.vue";
-import HomePage from "@/views/HomePage.vue";
-
 export default {
   name: "App",
   components: {
-      HomePage,
-      Home_1Component,
-      HomeComponent,
-      ServicesComponent,
-      CommitPage,
-      BrandPage,
-      AboutPage,
-      ServicesPage,
-      SalesBrandPage,
       NavbarPage,
       FooterPage,
   },
