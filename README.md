@@ -1,29 +1,24 @@
-# Printzapravka-front
+# Prinzaprafka
 
-This template should help get you started developing with Vue 3 in Vite.
+🚀 **Prinzaprafka** – bu avtomobillar uchun yoqilg'i quyish shoxobchalari haqida ma'lumot beruvchi veb-sayt.
 
-## Recommended IDE Setup
+## 🌐 Live Demo
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[Prinzaprafka](https://poetic-trifle-c8f33d.netlify.app/)
 
-## Customize configuration
+## 📸 Screenshot
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+![Prinzaprafka Screenshot](assets/HomePage.png)
 
-## Project Setup
+## 🛠 Texnologiyalar
+- **Vue.js** – Frontend uchun
+- **Pinia** – State management uchun
+- **Axios** – API so‘rovlarini yuborish uchun
+- **Bootstrap** – UI dizayni uchun
+- **Netlify** – Deploy uchun
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
