@@ -1,6 +1,6 @@
 # Prinzaprafka
 
-🚀 **Prinzaprafka** – bu avtomobillar uchun yoqilg'i quyish shoxobchalari haqida ma'lumot beruvchi veb-sayt.
+🚀 **Prinzaprafka** – bu Prentirlarga hizmat ko'rsatadigan korxona uchun sayt
 
 ## 🌐 Live Demo
 
