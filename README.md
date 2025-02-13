@@ -19,6 +19,7 @@
 - **Pinia** – State management uchun
 - **Axios** – API so‘rovlarini yuborish uchun
 - **Bootstrap** – UI dizayni uchun
+- **AOS** – Animatsiyalar  uchun
 - **Netlify** – Deploy uchun
 
 
