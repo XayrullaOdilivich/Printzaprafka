@@ -8,7 +8,11 @@
 
 ## 📸 Screenshot
 
-![Prinzaprafka Screenshot](assets/HomePage.png)
+![Prinzaprafka Screenshot](public/assets/HomePage.png)
+![Prinzaprafka Screenshot](public/assets/HomePage1.png)
+![Prinzaprafka Screenshot](public/assets/HomePage2.png)
+![Prinzaprafka Screenshot](public/assets/HomePage3.png)
+![Prinzaprafka Screenshot](public/assets/HomePage4.png)
 
 ## 🛠 Texnologiyalar
 - **Vue.js** – Frontend uchun
